@@ -1,1 +1,259 @@
 # hop.and.step.ami
+[index_Version7.html](https://github.com/user-attachments/files/23290757/index_Version7.html)
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>医療的ケア児・重症心身障がい児専門 児童発達支援 放課後デイサービス ほっぷ＆すてっぷ｜hop.and.step.ami</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      margin: 0;
+      background-color: #fff8fc;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* ヘッダー */
+    header {
+      background: linear-gradient(90deg, #f9c5d1, #f8e9a1, #a8e6cf, #ffd3b6);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      padding: 30px 20px;
+      text-align: center;
+      color: #2e4a3b;
+      border-bottom: 5px solid #ffd6a5;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    /* ナビゲーション */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e4a3b;
+      background-color: #a8e6cf;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffd3b6;
+      color: #fff;
+    }
+
+    /* ヒーロー */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fdf2e9;
+    }
+    .hero img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .hero h2 {
+      font-size: 1.6rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* セクション共通 */
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2e4a3b;
+      border-left: 8px solid #f5b76e;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* スタッフリスト */
+    .staff-list {
+      list-style: none;
+      padding: 0;
+    }
+    .staff-list li {
+      background-color: #a8e6cf;
+      margin-bottom: 8px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: #2e4a3b;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    /* ギャラリー */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Google Map */
+    iframe {
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+    }
+
+    /* フッター */
+    footer {
+      background-color: #a8e6cf;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #2e4a3b;
+      margin-top: 50px;
+      border-top: 4px solid #ffd6a5;
+    }
+
+    /* スマホ対応 */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .hero h2 { font-size: 1.2rem; }
+      section { margin: 20px 10px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>医療的ケア児・重症心身障がい児専門<br>児童発達支援・放課後デイサービス　ほっぷ＆すてっぷ</h1>
+  </header>
+
+  <nav>
+    <a href="#about">私たちの想い</a>
+    <a href="#services">事業内容</a>
+    <a href="#team">スタッフ紹介</a>
+    <a href="#gallery">施設写真</a>
+    <a href="#access">アクセス</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <div class="hero">
+    <img src="https://placehold.jp/800x400.png?text=笑顔の子どもたち（仮画像）" alt="笑顔の子どもたち">
+    <h2>医療的ケアや重い障がいがあっても、こどもにはこども同士の絆がある</h2>
+    <p>医療ケアや重い障がいのあるお子さんが楽しく安心して過ごせる場所を。<br>ご家族がリラックスできる時間を作りたい。経験豊富なスタッフがサポートします。</p>
+  </div>
+
+  <section id="about">
+    <h2>ほっぷ＆すてっぷの想い</h2>
+    <p>
+      どんな重い障がいや医療的ケアがあっても、子どもには子ども同士の絆があります。<br>
+      お友達と“ほっぷ”な気持ちで楽しく過ごせる時間を大切にし、
+    <p>
+      次の“すてっぷ”に向けた成長と発達をサポートします。<br>
+      医療ケアや障がいのある子ども同士の絆・笑顔・地域とのつながりを育み、ご家族にも安心できる時間をお届けします。
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>事業内容</h2>
+    <p>
+      ● <strong>重症心身障がい児・医療的ケア児専門の支援</strong><br>
+      重症心身障がいや医療的ケアが必要な子どものための児童発達支援・放課後等デイサービスです。<br><br>
+      ● <strong>地域と連携した総合サポート</strong><br>
+      土浦協同病院・悠有会すずきクリニックと医療協力協定を締結。<br>
+      主治医の指示に基づき、経験豊富なスタッフが丁寧な医療的ケアを行います。<br>
+      1日定員7名の少人数制で、一人ひとりの成長を手厚くサポートします。
+    </p>
+  </section>
+
+  <section id="team">
+    <h2>スタッフ紹介</h2>
+    <p>子どもたちの「らしさ」を尊重し、ご家族の「安心」を支えるために、専門スタッフがチームでサポートします。</p>
+    <ul class="staff-list">
+      <li>看護師　２名</li>
+      <li>児童発達支援管理責任者　１名</li>
+      <li>理学療法士　１名</li>
+      <li>児童指導員　１名</li>
+      <li>連携医療機関　土浦協同病院</li> 
+      <li>連携医療機関　悠有会すずきクリニック</li>
+    </ul>
+  </section>
+
+  <!-- 施設写真ページ -->
+  <section id="gallery">
+    <h2>施設写真</h2>
+    <p>床はフルフラットのバリアフリー。
+　　<p>経管栄養や医療用ベッド、吸引器を常備しております。
+    <p>いつでも見学お待ちしております。</p>
+    <div class="gallery">
+      <img src="https://placehold.jp/300x200.png?text=施設外観（仮）" alt="施設外観">
+      <img src="https://placehold.jp/300x200.png?text=プレイルーム（仮）" alt="プレイルーム">
+      <img src="https://placehold.jp/300x200.png?text=療育スペース（仮）" alt="療育スペース">
+      <img src="https://placehold.jp/300x200.png?text=設備・備品（仮）" alt="設備写真">
+    </div>
+  </section>
+
+  <section id="access">
+    <h2>アクセス</h2>
+    <p>
+      〒300-0341<br>
+      茨城県稲敷郡阿見町うずら野4-3-5 　ラ・プランシェ阿見110号室<br>
+      TEL：090-9357-4100<br>
+      最寄り駅：荒川沖駅から徒歩約10分
+    </p>
+    <iframe src="https://www.google.com/maps?q=茨城県稲敷郡阿見町うずら野4-3-5&output=embed"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>お問い合わせは以下のメールまたはお電話にて承っております。</p>
+    <p>📧 <a href="mailto:hop.and.step.ami@gmail.com">hop.and.step.ami@gmail.com</a></p>
+    <p>📞 090-9357-4100</p>
+    <p>✨️2025年12月1日オープン予定✨️</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ほっぷ＆すてっぷ All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
