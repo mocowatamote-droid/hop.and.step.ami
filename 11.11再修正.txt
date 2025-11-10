@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>医療的ケア児・重症心身障がい児専門 児童発達支援 放課後デイサービス ほっぷ＆すてっぷ｜hop.and.step.ami</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      margin: 0;
+      background-color: #fff8fc;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* ヘッダー */
+    header {
+      background: linear-gradient(90deg, #f9c5d1, #f8e9a1, #a8e6cf, #ffd3b6);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      padding: 30px 20px;
+      text-align: center;
+      color: #2e4a3b;
+      border-bottom: 5px solid #ffd6a5;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    /* ナビゲーション */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e4a3b;
+      background-color: #a8e6cf;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffd3b6;
+      color: #fff;
+    }
+
+    /* ヒーロー */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fdf2e9;
+    }
+    .hero img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    /* セクション共通 */
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2e4a3b;
+      border-left: 8px solid #f5b76e;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #2e4a3b;
+      margin-top: 25px;
+      font-size: 1.2rem;
+    }
+
+    ul, ol {
+      padding-left: 1.2em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    table th {
+      background-color: #fdf2e9;
+      color: #333;
+    }
+
+    /* スタッフリスト */
+    .staff-list {
+      list-style: none;
+      padding: 0;
+    }
+    .staff-list li {
+      background-color: #a8e6cf;
+      margin-bottom: 8px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: #2e4a3b;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    /* ギャラリー */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Google Map */
+    iframe {
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+    }
+
+    /* フッター */
+    footer {
+      background-color: #a8e6cf;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #2e4a3b;
+      margin-top: 50px;
+      border-top: 4px solid #ffd6a5;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      .hero h2 { font-size: 1.2rem; }
+      section { margin: 20px 10px; }
+      table th, table td { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>医療的ケア児・重症心身障がい児専門<br>児童発達支援・放課後デイサービス　ほっぷ＆すてっぷ</h1>
+  </header>
+
+  <nav>
+    <a href="#about">重心児・医療ケア児専門　ほっぷ＆すてっぷとは？</a>
+    <a href="#about_hopstep">🌈ほっぷ＆すてっぷの特徴</a>
+    <a href="#services">１日の流れ</a>
+    <a href="#target">医療的ケアについて</a>
+    <a href="#medicalcare">ご利用できるお子様</a>
+    <a href="#flow">利用手続きについて</a>
+    <a href="#team">スタッフ紹介</a>
+    <a href="#gallery">施設写真</a>
+    <a href="#access">アクセス</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <div class="hero">
+    <img src="https://placehold.jp/800x400.png?text=笑顔の子どもたち（仮画像）" alt="笑顔の子どもたち">
+    <h2>
+      どんな重い障がいや医療的ケアがあっても、子どもには子ども同士のつながりがある。<br>
+      お友達と心躍る“ほっぷ”な気持ちで、次の“すてっぷ”に向けた成長と発達を🌸<br>
+      医療ケアに長けた専門スタッフがチームを組み、「お子さんとご家族の安心」をサポートします。
+    </h2>
+  </div>
+
+  <section id="about_hopstep">
+    <h2>重心児・医療ケア児専門　ほっぷ＆すてっぷとは？</h2>
+    <p>ほっぷ＆すてっぷは、《超小規模（定員７名）》《医療的ケア児》《重症心身障がい児》に特化した放課後等デイサービスです。</p>
+    <p><strong>🌈土浦協同病院・悠有会すずきクリニックと医療協力協定を締結</strong>しております。地域と連携した総合サポートを行っています。</p>
+    <p>🍎私たちは<strong>「お子さんとご家族の笑顔を増やすこと」</strong>を目標に、看護師・保健師・児童発達支援管理責任者・児童指導員・理学療法士など専門スタッフがチームを組んでサポートしていきます。</p>
+    <p>🌸お子さんが日中お友達と楽しく活動して笑顔になる、そして<strong>「ご家族も安心して趣味やお買い物の時間を過ごすことができる」</strong>毎日の笑顔につながる支援を目指していきます。</p>
+
+    <h3>🌈ほっぷ＆すてっぷの特徴</h3>
+    <p><strong>01. 定員７名の超小規模で徹底したケア体制</strong><br>
+    少人数体制により、スタッフが一人ひとりと丁寧に向き合い、マンツーマンに近い療育支援を行っています。</p>
+
+    <p><strong>02. 専門スタッフによる安心・安全な療育</strong><br>
+    看護師・保健師・児童発達支援管理責任者・児童指導員など、経験豊富なスタッフがチームを組み、医療的・発達的な両面から支援します。</p>
+
+    <p><strong>03. 療法士による個別リハビリプログラム</strong><br>
+    理学療法士が作成した個別リハビリをもとに、日々の活動の中で無理なく取り組みます。</p>
+
+    <p><strong>04. 夏休みや長期休暇を活用した課外活動</strong></p>
+    <ul>
+      <li>茨城県自然博物館</li>
+      <li>グリコピア・雪印メグミルクなどの工場見学</li>
+      <li>あみプレミアムアウトレット</li>
+      <li>イオン・ショッピングモールでのお買い物　など♪</li>
+    </ul>
+
+    <p><strong>05. 福祉車両による安心の送迎</strong><br>
+    バギーや車椅子のまま乗車できる福祉車両を完備。</p>
+
+    <p><strong>06. 地域と連携した総合サポート</strong><br>
+    医療的ケアにおいて土浦協同病院・悠有会すずきクリニックと連携し、経験豊富なスタッフがサポートします。</p>
+
+    <h3>⏰１日のスケジュール</h3>
+
+
+    <h3>☆児童発達支援（就学前のお子様）</h3>
+    <table>
+      <tbody><tr><th>時間</th><th>内容</th></tr>
+      <tr><td>9:30</td><td>送迎</td></tr>
+      <tr><td>10:00</td><td>到着・水分補給・トイレ・健康チェック・出席確認</td></tr>
+      <tr><td>10:15</td><td>朝の会（ごあいさつ・お歌）／制作活動・レクリエーション</td></tr>
+      <tr><td>12:00</td><td>お昼（経管栄養やお弁当・歯磨き・片付け)</td></tr>
+      <tr><td>13:00</td><td>帰りの会</td></tr>
+      <tr><td>13:15</td><td>送迎バスまたは保護者様のお迎え</td></tr>
+    </tbody></table>
+    <p>※上記時間外のご利用に関してはご相談下さい</p>
+<br>
+    <h3>☆放課後等デイサービス（小学生〜高校生のお子様）</h3>
+    <table>
+      <tbody><tr><th>時間</th><th>内容</th></tr>
+      <tr><td>14:00</td><td>送迎（学校までお迎えに行きます）</td></tr>
+      <tr><td>15:00</td><td>水分補給・健康チェック・出席確認／制作活動・レクリエーション</td></tr>
+      <tr><td>16:15</td><td>帰りの会・連絡帳記入</td></tr>
+      <tr><td>16:30</td><td>送迎車または保護者様のお迎え</td></tr>
+    </tbody></table>
+    <p>※上記時間外のご利用に関してはご相談下さい</p>
+<br>
+    <h3>☆長期休暇日（夏休みなど）</h3>
+    <table>
+      <tbody><tr><th>時間</th><th>内容</th></tr>
+      <tr><td>9:30</td><td>送迎</td></tr>
+      <tr><td>10:15</td><td>到着・健康チェック</td></tr>
+      <tr><td>10:30</td><td>始まりの会</td></tr>
+      <tr><td>10:40</td><td>集団プログラム＆自由時間</td></tr>
+      <tr><td>12:00</td><td>お昼（経管栄養やお弁当・歯磨き・片付け）</td></tr>
+      <tr><td>13:00</td><td>集団レク or 個別プログラム</td></tr>
+      <tr><td>15:15</td><td>帰りの会・連絡帳記入</td></tr>
+      <tr><td>15:30</td><td>送迎車または保護者様のお迎え</td></tr>
+    </tbody></table>
+    <p>※上記時間外のご利用に関してはご相談下さい</p>
+<p><br></p>
+    <h3>🎨活動プログラム（Program）</h3>
+    <p><strong>全体プログラムの一例</strong></p>
+    <ul>
+      <li>課外活動（社会科工場見学やショッピングモールへお出かけ）</li>
+      <li>室内運動（ボール遊び・体操）</li>
+      <li>音楽（リトミック・合奏）</li>
+      <li>読み聞かせ（絵本）</li>
+      <li>リラックス（アロマなど）</li>
+      <li>お散歩（お天気の良い日は公園へ♪）</li>
+    </ul>
+<br>
+
+   <strong>個別プログラムの一例</strong><p></p>
+    <ul>
+      <li>音楽（楽器遊び）</li>
+      <li>運動（バランスボール・風船遊び）</li>
+      <li>手遊び歌・読み聞かせ</li>
+      <li>折り紙・制作</li>
+      <li>感覚遊び（スライム・絵の具）</li>
+      <li>リラックス（マッサージ）</li>
+    </ul>
+  </section>
+<p><br></p> <p><br></p>
+ <section id="medicalcare">
+<p><br></p>
+  <h2>🩺 医療的ケアについて</h2>
+  <p>
+    医療的ケアは、下記の内容において主治医の指示書を基に保護者からの依頼と同意に基づいて、看護師及び医療的ケアの研修を受けた介護士が実施いたします。
+  </p>
+
+  <ol>
+    <li>吸引（口腔内・鼻腔内・気管カニューレ内）</li>
+    <li>経管栄養（胃ろう・腸ろう・経鼻）</li>
+    <li>吸入</li>
+    <li>導尿・浣腸</li>
+    <li>発作時の対応（座薬使用時はご家族に連絡いたします）</li>
+  </ol>
+</section>
+
+
+<p><br></p>
+<section id="target"><p><br></p> 
+<p><br></p>     <h2>ご利用できるお子様</h2>
+
+    <p>
+      ほっぷ＆すてっぷでは、重症心身障がい児の就学中のお子様を対象にサービスを提供しています。ご利用にあたっては、事前に重心認定を受けていただく必要があります。
+      （重症心身障がい児以外でも、重心児スコアで超重症児・準超重症児に該当されるお子様も対象です。）
+      ※放課後等デイサービスの通所受給者証をお持ちの方も対象となります。
+    </p>
+
+    <h3>◎受給者証をすでにお持ちの場合</h3>
+    <p>
+      通所受給者証をお持ちの方は、証明書をご持参のうえご来所ください。ご契約後、利用日数に応じてすぐにご利用いただけます。
+      スタッフが丁寧にヒアリングを行い、お子様に合わせた支援計画を作成し、ご家庭と連携しながら最適な療育をご提案いたします。
+    </p>
+
+    <h3>◎受給者証をお持ちでない場合</h3>
+    <p>
+      放課後等デイサービスをご利用いただくには、「通所受給者証」が必要です。お住まいの市役所（福祉課）にて、放課後等デイサービス利用の申請手続きを行ってください。
+      支給が決定すると通所受給者証が発行され、その後すぐにサービスをご利用いただけます。
+    </p>
+
+    <p>ご不明な点や手続き方法については、スタッフがサポートいたしますのでお気軽にご相談ください。</p>
+  
+<p><br></p>
+  <section id="flow"><p><br></p>   <!-- usage flow -->
+
+    <h2>ご利用までの流れ</h2>
+
+    <ol class="flow-steps">
+      <li><strong>施設の見学・相談</strong><br>まずはお気軽にお問い合わせください。施設の雰囲気や支援内容を見学していただけます。</li>
+      <li><strong>障害福祉課での受給者証申請</strong><br>お住まいの市町村役所の障害福祉課にて、「放課後等デイサービス利用」の申請を行ってください。</li>
+      <li><strong>受給者証の交付</strong><br>支給決定後、通所受給者証が発行されます。</li>
+      <li><strong>面談・契約</strong><br>お子様の状態やご家庭の希望をお伺いし、支援計画を立てたうえでご契約を行います。</li>
+      <li><strong>ご利用開始</strong><br>ご契約後、安心して療育・活動をスタートできます。</li>
+    </ol>
+
+<p><br></p>
+</section>
+
+  <section id="team">
+    <h2>スタッフ紹介</h2>
+    <ul class="staff-list">
+      <li>保健師・看護師　２名</li>
+      <li>児童発達支援管理責任者　１名</li>
+      <li>理学療法士　１名</li>
+      <li>児童指導員　１名</li>
+      <li>連携医療機関　土浦協同病院</li>
+      <li>連携医療機関　悠有会すずきクリニック</li>
+  <p>子どもたちの「らしさ」を尊重し、ご家族の「安心」を支えるために、専門スタッフがチームでサポートします。</p>
+    </ul>
+  </section>    
+<p><br></p>
+<section id="gallery">
+    <h2>施設写真</h2>
+     <p>
+      床はフルフラットのバリアフリー設計で、経管栄養物品や医療用ベッド・吸引器等の医療ケア設備を常備しております。<br>
+      清潔で安心できる空間づくりを心がけています。いつでも見学お待ちしております。
+      <div class="gallery">
+      <img src="IMG_9328.jpeg" alt="施設外観">
+      <img src="IMG_9335.jpeg" alt="玄関・受付">
+      <img src="IMG_9344.jpeg" alt="プレイルーム全景">
+      <img src="IMG_9486.jpeg" alt="リハビリ・療育スペース">
+      <img src="IMG_9488.jpeg" alt="医療設備・ケアエリア">
+      <img src="IMG_9489.jpeg" alt="活動スペース">
+      <img src="IMG_9491.jpeg" alt="教材・遊具コーナー">
+      <img src="IMG_9492.jpeg" alt="ベッド・ケア用品">
+      <img src="IMG_9496.jpeg" alt="外観・送迎車両">
+    </div>
+  </section>
+
+
+<section id="access">
+    <h2>アクセス</h2>
+    <p>〒300-0341<br>茨城県稲敷郡阿見町うずら野4-3-5<br>TEL：090-9357-4100</p>
+    <iframe src="https://www.google.com/maps?q=茨城県稲敷郡阿見町うずら野4-3-5&amp;output=embed"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>お問い合わせは以下のメールまたはお電話にて承っております。</p>
+    <p>📧 <a href="mailto:hop.and.step.ami@gmail.com">hop.and.step.ami@gmail.com</a></p>
+    <p>📞 090-9357-4100</p>
+    <p>✨️2025年12月1日オープン予定✨️</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ほっぷ＆すてっぷ All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+  
